@@ -8,6 +8,8 @@ import org.springframework.jms.support.converter.MessageType;
 @Configuration
 public class JmsConfig {
 
+    public static final String HELLO_QUEUE = "hello-world-queue";
+
     public MessageConverter messageConverter() {
         MappingJackson2MessageConverter converter = new MappingJackson2MessageConverter();
 
